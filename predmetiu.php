@@ -25,32 +25,32 @@ if(isset($_POST) && !empty($_POST)) {
 		$nid=$del;
 		$sql='DELETE FROM predmeti WHERE ID="'.$del.'"';
 		echo $sql.'<br/>';
-		mysql_query($sql);
+		mysqli_query($mysqli,$sql) or die;
 	}
 	elseif ($nid==$nextid) {
 		$sql='INSERT INTO predmeti (tip, predmet, cena, opis, uneo) VALUES ("'.$tip.'","'.$predmet.'","'.$cena.'","'.$opis.'","'.$user.' - '.$dattime.'")';
-		mysql_query($sql) or die;
+		mysqli_query($mysqli,$sql) or die;
 	}
 	else {
 		$sql='SELECT menjali FROM predmeti WHERE ID="'.$nid.'"';
-		$result=mysql_query($sql);
-		$row=mysql_fetch_assoc($result);
+		$result=mysqli_query($mysqli,$sql) or die;
+		$row=$result->fetch_assoc();
 		$xmenjali=$row['menjali'];
 		
 		$sql='UPDATE predmeti SET tip="'.$tip.'", predmet="'.$predmet.'", cena="'.$cena.'", opis="'.$opis.'", menjali="'.$xmenjali.'; '.$user.' - '.$dattime.'" WHERE ID="'.$nid.'"';
-		mysql_query($sql) or die;
+		mysqli_query($mysqli,$sql) or die;
 	}
 		
 		$sql='SELECT ID FROM predmeti ORDER BY ID DESC LIMIT 1';
-		$result=mysql_query($sql);
-		$row=mysql_fetch_assoc($result);
+		$result=mysqli_query($mysqli,$sql);
+		$row=$result->fetch_assoc();
 		$cid=$row['ID'];
 		
 		$xid=$cid;
 }
 $sql='SHOW TABLE STATUS WHERE name = "predmeti"';
-$result=mysql_query($sql);
-$row=mysql_fetch_assoc($result);
+$result=mysqli_query($mysqli,$sql) or die;
+$row=$result->fetch_assoc();
 $ai=$row['Auto_increment'];
 
 if (empty($_POST)) $xid=$ai;
@@ -87,8 +87,8 @@ elseif (isset($cid)) echo ' onload="izmena('.$nid.')"';
 		<div id="blacklink" style="font-size:12;overflow:auto">
 <?php
 $sql="SELECT `ID`,`predmet`,`cena` FROM predmeti ORDER BY `predmet` ASC";
-$result=mysql_query($sql) or die;
-while($row=mysql_fetch_assoc($result)) {
+$result=mysqli_query($mysqli,$sql) or die;
+while($row=$result->fetch_assoc()) {
 $ID=$row['ID'];
 $predmet=$row['predmet'];
 $cena=$row['cena'];

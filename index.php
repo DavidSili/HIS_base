@@ -37,7 +37,7 @@
 		<div class="iul" style="text-align:left;width:185px"><b>Predstojeći rođendani u odredu <?php
 $sql='SELECT odredi.ime oime, odredi.ID oid FROM odredi,users WHERE odredi.ID = users.zaodred AND users.username="'.$user.'"';
 $result=mysqli_query($mysqli,$sql);
-$row=mysql_fetch_assoc($result);
+$row=$result->fetch_assoc();
 $oime=$row['oime'];
 $oid=$row['oid'];
 echo $oime.':</b><br/>';
@@ -48,14 +48,14 @@ datrod,
 datrod + INTERVAL(YEAR(CURRENT_TIMESTAMP) - YEAR(datrod)) + 0 YEAR AS currbirthday,
 datrod + INTERVAL(YEAR(CURRENT_TIMESTAMP) - YEAR(datrod)) + 1 YEAR AS nextbirthday
 FROM imenik
-WHERE odred ="'.$oid.'"
+WHERE odred ="'.$oid.'" AND datrod IS NOT NULL
 ORDER BY CASE WHEN currbirthday < CURRENT_TIMESTAMP
 THEN nextbirthday
 ELSE currbirthday
 END
 LIMIT 10';
 $result=mysqli_query($mysqli,$sql);
-while($row=mysql_fetch_assoc($result)) {
+while($row=$result->fetch_assoc()) {
 $ime=$row['ime'];
 $prezime=$row['prezime'];
 $rodj=$row['currbirthday'];
@@ -77,7 +77,7 @@ $sql='SELECT ime, prezime, datrod FROM imenik WHERE odred="'.$oid.'" ORDER BY da
 $result=mysqli_query($mysqli,$sql);
 $danas=time();
 $uzrast=0;
-while($row=mysql_fetch_assoc($result)) {
+while($row=$result->fetch_assoc()) {
 $ime=$row['ime'];
 $prezime=$row['prezime'];
 $datrod=$row['datrod'];

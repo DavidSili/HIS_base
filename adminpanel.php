@@ -44,7 +44,7 @@ if(isset($_POST) && !empty($_POST)) {
 		if ($usernejmovi ==0 AND $emailovi ==0) {
 		
 			$query='INSERT INTO users (username, name, password, salt, level, email) VALUES ("'.$xusername.'","'.$xime.'","'.$hash.'","'.$salt.'","2","'.$xemail.'")';
-			mysql_query($query);
+			mysqli_query($mysqli,$query);
 		}
 	}
 	
@@ -91,7 +91,7 @@ if(isset($_POST) && !empty($_POST)) {
 <?php
 $sql='SELECT ID, ime, mesto FROM odredi';
 $result=mysqli_query($mysqli,$sql) or die;
-while($row=mysql_fetch_assoc($result)) {
+while($row=$result->fetch_assoc()) {
 	$ID=$row['ID'];
 	$ime=$row['ime'];
 	$mesto=$row['mesto'];
@@ -103,7 +103,7 @@ while($row=mysql_fetch_assoc($result)) {
 $odrediID="";
 $sql='SELECT *, IF(funkcija="0", 2, 1) AS funk FROM users ORDER BY funk, funkcija';
 $result=mysqli_query($mysqli,$sql) or die;
-while($row=mysql_fetch_assoc($result)) {
+while($row=$result->fetch_assoc()) {
 	foreach($row as $xx => $yy) {
 		$$xx=$yy;
 	}

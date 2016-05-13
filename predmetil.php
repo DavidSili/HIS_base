@@ -21,12 +21,12 @@ if(isset($_POST) && !empty($_POST)) {
 	$ID=substr($naziv, 5);
 	$nalageru=$yy;
 	$sql='SELECT menjali FROM predmeti WHERE ID="'.$ID.'"';
-	$result=mysql_query($sql);
-	$row=mysql_fetch_assoc($result);
+	$result=mysqli_query($mysqli,$sql);
+	$row=$result->fetch_assoc();
 	$xmenjali=$row['menjali'];
 	
 	$sql='UPDATE predmeti SET nalageru="'.$nalageru.'", menjali="'.$xmenjali.'; '.$user.' - '.$dattime.'" WHERE ID="'.$ID.'"';
-	mysql_query($sql) or die;
+	mysqli_query($mysqli,$sql) or die;
 	}
 		
 }
@@ -93,8 +93,8 @@ if(isset($_POST) && !empty($_POST)) {
 <?php
 $tipx="";
 $sql="SELECT * FROM predmeti ORDER BY tip, ID";
-$result=mysql_query($sql);
-while($row=mysql_fetch_assoc($result)) {
+$result=mysqli_query($mysqli,$sql);
+while($row=$result->fetch_assoc()) {
 	foreach($row as $xx => $yy) {
 		$$xx=$yy;
 	}

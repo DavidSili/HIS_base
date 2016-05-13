@@ -43,8 +43,8 @@
 <div id="wrapper" style="margin-top:28px">
 <?php
 $sql="SELECT * FROM obuke ORDER BY datpoc";
-$result=mysql_query($sql);
-while($row=mysql_fetch_assoc($result)) {
+$result=mysqli_query($mysqli,$sql);
+while($row=$result->fetch_assoc()) {
 	foreach($row as $xx => $yy) {
 		$$xx=$yy;
 	}
@@ -73,8 +73,8 @@ $prisutni=explode(';',$prisutni);
 $prisutni[0]=explode(',',$prisutni[0]);
 if (isset($prisutni[1])) $prisutni[1]=explode(',',$prisutni[1]);
 $sql2="SELECT imenik.ID idi, imenik.ime ime, imenik.prezime prezime, imenik.datrod datum, odredi.ime odred FROM imenik, odredi WHERE imenik.odred=odredi.ID ORDER BY prezime,ime ASC";
-$result2=mysql_query($sql2) or die;
-while ($row2=mysql_fetch_assoc($result2)) {
+$result2=mysqli_query($mysqli,$sql2) or die;
+while ($row2=$result->fetch_assoc()) {
 	$idi=$row2['idi'];
 	$prezime=$row2['prezime'];
 	$ime=$row2['ime'];
@@ -85,8 +85,8 @@ while ($row2=mysql_fetch_assoc($result2)) {
 $prisutni1="";
 $prisutni2="";
 $sql3="SELECT imenik.ID idi, imenik.ime ime, imenik.prezime prezime, imenik.datrod datum, odredi.ime odred FROM imenik, odredi WHERE imenik.odred=odredi.ID ORDER BY RAND()";
-$result3=mysql_query($sql3) or die;
-while ($row3=mysql_fetch_assoc($result3)) {
+$result3=mysqli_query($mysqli,$sql3) or die;
+while ($row3=$result->fetch_assoc()) {
 	$idi=$row3['idi'];
 	$prezime=$row3['prezime'];
 	$ime=$row3['ime'];

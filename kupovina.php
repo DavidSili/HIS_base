@@ -30,7 +30,7 @@ if(isset($_POST) && !empty($_POST)) {
 	$datnar=date('Y-m-d');
 	
 	$sql='INSERT INTO narudzbine (narucio, datnar, predmeti, komentar, uneo) VALUES ("'.$user.'","'.$datnar.'","'.$sorted.'","'.$komentar.'", "'.$user.' - '.$dattime.'")';
-	mysql_query($sql);
+	mysqli_query($mysqli,$sql) or die;
 	
 }
 
@@ -64,7 +64,7 @@ ul {font-family:arial}
 #sortable1 li, #sortable2 li {
 	margin: 3px;
 	padding: 5px;
-	font-size: 12;
+	font-size: 12pt;
 	width: 100px;
 	height: 167px;
 	border:2px solid #000;
@@ -84,8 +84,8 @@ ul {font-family:arial}
 <ul id="sortable2" class="connectedSortable" style="position:absolute;top:35px;bottom:5px;left:475px;right:5px;padding:5px" onmouseup="sorter1()" onmouseout="sorter1()">
 <?php
 $sql='SELECT * FROM predmeti WHERE nalageru!="0" ORDER BY tip, predmet';
-$result=mysql_query($sql);
-while($row=mysql_fetch_assoc($result)) {
+$result=mysqli_query($mysqli,$sql) or die;
+while($row=$result->fetch_assoc()) {
 	foreach($row as $xx => $yy) {
 		$$xx=$yy;
 	}

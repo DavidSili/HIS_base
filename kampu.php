@@ -58,32 +58,32 @@ if(isset($_POST) && !empty($_POST)) {
 		$del=$_POST['del'];
 		$nid=$del;
 		$sql='DELETE FROM kampovi WHERE ID="'.$del.'"';
-		mysql_query($sql);
+		mysqli_query($mysqli,$sql) or die;
 	}
 	elseif ($nid==$nextid) {
 		$sql='INSERT INTO kampovi (naziv, datpoc, datkraj, mesto, drzava, tip, organizator, funkcije, komentar, prisutni, uneo) VALUES ("'.$naziv.'",'.$datpoc.','.$datkraj.',"'.$mesto.'","'.$drzava.'","'.$tip.'","'.$organizator.'","'.$funkcije.'","'.$komentar.'","'.$sorterklik.'", "'.$user.' - '.$dattime.'")';
-		mysql_query($sql) or die;
+		mysqli_query($mysqli,$sql) or die;
 	}
 	else {
 		$sql='SELECT menjali FROM kampovi WHERE ID="'.$nid.'"';
-		$result=mysql_query($sql);
-		$row=mysql_fetch_assoc($result);
+		$result=mysqli_query($mysqli,$sql) or die;
+		$row=$result->fetch_assoc();
 		$xmenjali=$row['menjali'];
 		
 		$sql='UPDATE kampovi SET `naziv`="'.$naziv.'",`datpoc`='.$datpoc.',`datkraj`='.$datkraj.',`mesto`="'.$mesto.'",`drzava`="'.$drzava.'",`tip`="'.$tip.'",`organizator`="'.$organizator.'",`funkcije`="'.$funkcije.'",`komentar`="'.$komentar.'",`prisutni`="'.$sorterklik.'",`menjali`="'.$xmenjali.'; '.$user.' - '.$dattime.'" WHERE ID="'.$nid.'"';
-		mysql_query($sql) or die;
+		mysqli_query($mysqli,$sql) or die;
 	}
 		
 		$sql='SELECT ID FROM kampovi ORDER BY ID DESC LIMIT 1';
-		$result=mysql_query($sql);
-		$row=mysql_fetch_assoc($result);
+		$result=mysqli_query($mysqli,$sql) or die;
+		$row=$result->fetch_assoc();
 		$cid=$row['ID'];
 		
 		$xid=$cid;
 }
 $sql='SHOW TABLE STATUS WHERE name = "kampovi"';
-$result=mysql_query($sql);
-$row=mysql_fetch_assoc($result);
+$result=mysqli_query($mysqli,$sql) or die;
+$row=$result->fetch_assoc();
 $ai=$row['Auto_increment'];
 
 if (empty($_POST)) $xid=$ai;
@@ -141,8 +141,8 @@ else echo ' onload="praznalista()"';
 <?php
 $odredx="";
 $sql="SELECT ID,naziv FROM kampovi ORDER BY datpoc";
-$result=mysql_query($sql) or die;
-while($row=mysql_fetch_assoc($result)) {
+$result=mysqli_query($mysqli,$sql) or die;
+while($row=$result->fetch_assoc()) {
 
 foreach($row as $xx => $yy) {
 	$$xx=$yy;

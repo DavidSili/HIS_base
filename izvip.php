@@ -34,16 +34,16 @@
 <div id="wrapper" style="margin-top:28px">
 <?php
 $sql="SELECT ID, ime FROM odredi";
-$result=mysql_query($sql);
-while($row=mysql_fetch_assoc($result)) {
+$result=mysqli_query($mysqli,$sql) or die;
+while($row=$result->fetch_assoc()) {
 	foreach($row as $xx => $yy) {
 		$$xx=$yy;
 	}
 	$odredx[$ID]=$ime;
 }
 $sql2="SELECT ID idv, naziv, fajl FROM vestine";
-$result2=mysql_query($sql2);
-while($row2=mysql_fetch_assoc($result2)) {
+$result2=mysqli_query($mysqli,$sql2);
+while($row2=$result2->fetch_assoc()) {
 	foreach($row2 as $xxx => $yyy) {
 		$$xxx=$yyy;
 	}
@@ -51,14 +51,14 @@ while($row2=mysql_fetch_assoc($result2)) {
 	$vestiney[$idv]=$fajl;
 }
 $sql='SELECT zaodred FROM users WHERE users.username="'.$user.'"';
-$result=mysql_query($sql);
-$row=mysql_fetch_assoc($result);
+$result=mysqli_query($mysqli,$sql) or die;
+$row=$result->fetch_assoc();
 $oid=$row['zaodred'];
 
 if ($level<3) $sql='SELECT * FROM imenik WHERE odred="'.$oid.'" ORDER BY odred, prezime, ime';
 	else $sql="SELECT * FROM imenik ORDER BY odred, prezime, ime";
-$result=mysql_query($sql);
-while($row=mysql_fetch_assoc($result)) {
+$result=mysqli_query($mysqli,$sql) or die;
+while($row=$result->fetch_assoc()) {
 	foreach($row as $xx => $yy) {
 		$$xx=$yy;
 	}

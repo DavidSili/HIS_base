@@ -51,32 +51,33 @@ if(isset($_POST) && !empty($_POST)) {
 		$del=$_POST['del'];
 		$nid=$del;
 		$sql='DELETE FROM imenik WHERE ID="'.$del.'"';
-		mysql_query($sql);
+		mysqli_query($mysqli,$sql) or die;
 	}
 	elseif ($nid==$nextid) {
 		$sql='INSERT INTO imenik (ime, prezime, datrod, mestorod, adresa, pobroj, mestoziv, telefon, mobilni, email, krvna, plivac, vegan, alergije, hronicnebol, lekovi, ostaleinfo, datprim, datisk, odred, otime, otprezime, otteldan, ottelnoc, otadresa, otmobilni, otemail, maime, maprezime, mateldan, matelnoc, maadresa, mamobilni, maemail, nesime, nesadr, nestel, funkcije, cinovi, vestine, clanarine, komentar, uneo) VALUES ("'.$ime.'","'.$prezime.'",'.$datrod.',"'.$mestorod.'","'.$adresa.'","'.$pobroj.'","'.$mestoziv.'","'.$telefon.'","'.$mobilni.'","'.$email.'","'.$krvna.'","'.$plivac.'","'.$vegan.'","'.$alergije.'","'.$hronicnebol.'","'.$lekovi.'","'.$ostaleinfo.'",'.$datprim.','.$datisk.',"'.$odred.'","'.$otime.'","'.$otprezime.'","'.$otteldan.'","'.$ottelnoc.'","'.$otadresa.'","'.$otmobilni.'","'.$otemail.'","'.$maime.'","'.$maprezime.'","'.$mateldan.'","'.$matelnoc.'","'.$maadresa.'","'.$mamobilni.'","'.$maemail.'","'.$nesime.'","'.$nesadr.'","'.$nestel.'","'.$funkcije.'","'.$cinovi.'","'.$vestine.'","'.$clanarine.'","'.$komentar.'","'.$user.' - '.$dattime.'")';
-		mysql_query($sql) or die;
+		mysqli_query($mysqli,$sql) or die;
 	}
 	else {
 		$sql='SELECT menjali FROM imenik WHERE ID="'.$nid.'"';
-		$result=mysql_query($sql);
-		$row=mysql_fetch_assoc($result);
+		$result=mysqli_query($mysqli,$sql) or die;
+		$row=$result->fetch_assoc();
+		$row=$result->fetch_assoc();
 		$xmenjali=$row['menjali'];
 		
 		$sql='UPDATE imenik SET ime="'.$ime.'", prezime="'.$prezime.'", datrod='.$datrod.', mestorod="'.$mestorod.'", adresa="'.$adresa.'", pobroj="'.$pobroj.'", mestoziv="'.$mestoziv.'", telefon="'.$telefon.'", mobilni="'.$mobilni.'", email="'.$email.'", krvna="'.$krvna.'", plivac="'.$plivac.'", vegan="'.$vegan.'", alergije="'.$alergije.'", hronicnebol="'.$hronicnebol.'", lekovi="'.$lekovi.'", ostaleinfo="'.$ostaleinfo.'", datprim='.$datprim.', datisk='.$datisk.', odred="'.$odred.'", otime="'.$otime.'", otprezime="'.$otprezime.'", otteldan="'.$otteldan.'", ottelnoc="'.$ottelnoc.'", otadresa="'.$otadresa.'", otmobilni="'.$otmobilni.'", otemail="'.$otemail.'", maime="'.$maime.'", maprezime="'.$maprezime.'", mateldan="'.$mateldan.'", matelnoc="'.$matelnoc.'", maadresa="'.$maadresa.'", mamobilni="'.$mamobilni.'", maemail="'.$maemail.'", nesime="'.$nesime.'", nesadr="'.$nesadr.'", nestel="'.$nestel.'", funkcije="'.$funkcije.'", cinovi="'.$cinovi.'", vestine="'.$vestine.'", clanarine="'.$clanarine.'", komentar="'.$komentar.'", menjali="'.$xmenjali.'; '.$user.' - '.$dattime.'" WHERE ID="'.$nid.'"';
-		mysql_query($sql) or die;
+		mysqli_query($mysqli,$sql) or die;
 	}
 		
 		$sql='SELECT ID FROM imenik ORDER BY ID DESC LIMIT 1';
-		$result=mysql_query($sql);
-		$row=mysql_fetch_assoc($result);
+		$result=mysqli_query($mysqli,$sql) or die;
+		$row=$result->fetch_assoc();
 		$cid=$row['ID'];
 		
 		$xid=$cid;
 }
 $sql='SHOW TABLE STATUS WHERE name = "imenik"';
-$result=mysql_query($sql);
-$row=mysql_fetch_assoc($result);
+$result=mysqli_query($mysqli,$sql) or die;
+$row=$result->fetch_assoc();
 $ai=$row['Auto_increment'];
 
 if (empty($_POST)) $xid=$ai;
@@ -126,8 +127,8 @@ elseif (isset($cid)) echo ' onload="izmena('.$nid.')"';
 		<div id="blacklink" style="font-size:12;overflow:auto">
 <?php
 $sql='SELECT zaodred FROM users WHERE users.username="'.$user.'"';
-$result=mysql_query($sql);
-$row=mysql_fetch_assoc($result);
+$result=mysqli_query($mysqli,$sql) or die;
+$row=$result->fetch_assoc();
 $oid=$row['zaodred'];
 
 $odredx="";
@@ -136,8 +137,8 @@ FROM imenik
 LEFT JOIN odredi ON imenik.odred = odredi.ID ';
 if ($level<3) $sql.='WHERE imenik.odred = "'.$oid.'" ';
 $sql.='ORDER BY  `imenik`.`odred` ,  `clanarina` ,  `imenik`.`prezime` ,  `imenik`.`ime`';
-$result=mysql_query($sql) or die;
-while($row=mysql_fetch_assoc($result)) {
+$result=mysqli_query($mysqli,$sql) or die;
+while($row=$result->fetch_assoc()) {
 
 foreach($row as $xx => $yy) {
 	$$xx=$yy;
@@ -268,8 +269,8 @@ if ($level<3) $sql='SELECT ID, ime FROM odredi WHERE ID="'.$oid.'" ORDER BY ime'
 		echo '<option></option>';
 		$sql='SELECT ID, ime FROM odredi ORDER BY ime';
 	}
-$result=mysql_query($sql) or die;
-while($row=mysql_fetch_assoc($result)) {
+$result=mysqli_query($mysqli,$sql) or die;
+while($row=$result->fetch_assoc()) {
 $ID=$row['ID'];
 $ime=$row['ime'];
 			echo '<option value="'.$ID.'">'.$ime.'</option>';
@@ -407,8 +408,8 @@ $ime=$row['ime'];
 	<div class="iur">
 		<div class="iul"><b>veštine:</b><select name="vestines" id="vestines" style="width:152px;margin-left:3px"><?php
 $sql='SELECT naziv FROM vestine';
-$result=mysql_query($sql);
-while($row=mysql_fetch_assoc($result)) {
+$result=mysqli_query($mysqli,$sql) or die;
+while($row=$result->fetch_assoc()) {
 	echo '<option>'.$row['naziv'].'</option>';
 }
 

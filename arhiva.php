@@ -26,8 +26,8 @@ if(isset($_POST) && !empty($_POST)) {
 		$$xx=$yy;
 	}
 	$sql0='SELECT * FROM narudzbine WHERE ID="'.$idx.'"';
-	$result0=mysql_query($sql0);
-	$row0=mysql_fetch_assoc($result0);
+	$result0=mysqli_query($mysqli,$sql0);
+	$row0=$result0->fetch_assoc();
 	foreach($row0 as $xx => $yy) {
 		$$xx=$yy;
 	}
@@ -97,8 +97,8 @@ if(isset($_POST) && !empty($_POST)) {
 <div id="wrapper" style="margin-top:30px">
 <?php
 $sql0="SELECT username,name FROM users";
-$result0=mysql_query($sql0);
-while ($row0=mysql_fetch_assoc($result0)) {
+$result0=mysqli_query($mysqli,$sql0);
+while ($row0=$result0->fetch_assoc()) {
 $username=$row0['username'];
 $name=$row0['name'];
 	$korisnici[$username]=$name;
@@ -128,7 +128,7 @@ else $sql='SELECT *,
 
 $result=mysqli_query($mysqli,$sql) or die;
 $tipx="";
-while($row=mysql_fetch_assoc($result)) {
+while($row=$result->fetch_assoc()) {
 	foreach($row as $xx => $yy) {
 		$$xx=$yy;
 	}
@@ -167,8 +167,8 @@ foreach($predmeti as $xx => $yy) {
 $ida=$ID;
 $ukupno=0;
 $sql2='SELECT * FROM predmeti';
-$result2=mysql_query($sql2);
-while ($row2=mysql_fetch_assoc($result2)) {
+$result2=mysqli_query($mysqli,$sql2);
+while ($row2=$result2->fetch_assoc()) {
 	foreach($row2 as $xx => $yy) {
 		$$xx=$yy;
 	}
@@ -184,7 +184,7 @@ while ($row2=mysql_fetch_assoc($result2)) {
 	}
 	
 }
-echo '<div style="float:right;margin-right:5px;font-size:14"><b>Ukupno: '.$ukupno.' €</b></div></div>';
+echo '<div style="float:right;margin-right:5px;font-size:14pt"><b>Ukupno: '.$ukupno.' €</b></div></div>';
 $danas=date('Y-m-d');
 if ($level>2) {
 echo '<div class="col3">';

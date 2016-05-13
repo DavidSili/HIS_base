@@ -37,8 +37,8 @@
 <div id="wrapper" style="margin-top:28px">
 <?php
 $sql="SELECT * FROM odredi ORDER BY datosn";
-$result=mysql_query($sql);
-while($row=mysql_fetch_assoc($result)) {
+$result=mysqli_query($mysqli,$sql);
+while($row=$result->fetch_assoc()) {
 	foreach($row as $xx => $yy) {
 		$$xx=$yy;
 	}
@@ -63,8 +63,8 @@ if ($stranica!=="") echo '<div><b>Internet prezentacija:</b><br/><a href="'.$str
 echo '</div><div style="width:265px;clear:both">';
 $IDa=$ID;
 $sql2='SELECT ime, prezime, funkcije FROM imenik WHERE funkcije!="" AND odred="'.$IDa.'"';
-$result2=mysql_query($sql2);
-while($row2=mysql_fetch_assoc($result2)) {
+$result2=mysqli_query($mysqli,$sql2);
+while($row2=$result->fetch_assoc()) {
 
 	foreach($row2 as $xx => $yy) {
 		$$xx=$yy;

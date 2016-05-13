@@ -3,8 +3,8 @@ include '../config.php';
 $posebno = isset($_GET["posebno"]) ? $_GET["posebno"] : 0;
 $prisutni2="";
 $sql2="SELECT imenik.ID idi, imenik.ime ime, imenik.prezime prezime, imenik.datrod datum, imenik.odred oid, odredi.ime odred FROM imenik, odredi WHERE imenik.odred=odredi.ID ORDER BY prezime,ime ASC";
-$result2=mysql_query($sql2) or die;
-while ($row2=mysql_fetch_assoc($result2)) {
+$result2=mysqli_query($mysqli,$sql2) or die;
+while ($row2=$result->fetch_assoc()) {
 	$idi=$row2['idi'];
 	$prezime=$row2['prezime'];
 	$ime=$row2['ime'];
