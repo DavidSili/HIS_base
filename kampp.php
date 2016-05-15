@@ -81,7 +81,7 @@ $prisutni[0]=explode(',',$prisutni[0]);
 if (isset($prisutni[1])) $prisutni[1]=explode(',',$prisutni[1]);
 $sql2="SELECT imenik.ID idi, imenik.ime ime, imenik.prezime prezime, imenik.datrod datum, odredi.ime odred FROM imenik, odredi WHERE imenik.odred=odredi.ID ORDER BY prezime,ime ASC";
 $result2=mysqli_query($mysqli,$sql2) or die;
-while ($row2=$result->fetch_assoc()) {
+while ($row2=$result2->fetch_assoc()) {
 	$idi=$row2['idi'];
 	$prezime=$row2['prezime'];
 	$ime=$row2['ime'];
@@ -93,7 +93,7 @@ $prisutni1="";
 $prisutni2="";
 $sql3="SELECT imenik.ID idi, imenik.ime ime, imenik.prezime prezime, imenik.datrod datum, odredi.ime odred FROM imenik, odredi WHERE imenik.odred=odredi.ID ORDER BY RAND()";
 $result3=mysqli_query($mysqli,$sql3) or die;
-while ($row3=$result->fetch_assoc()) {
+while ($row3=$result3->fetch_assoc()) {
 	$idi=$row3['idi'];
 	$prezime=$row3['prezime'];
 	$ime=$row3['ime'];

@@ -21,7 +21,7 @@ $prisutnis="";
 
 $sql2="SELECT imenik.ID idi, imenik.ime ime, imenik.prezime prezime, imenik.datrod datum, imenik.odred oid, odredi.ime odred FROM imenik, odredi WHERE imenik.odred=odredi.ID ORDER BY prezime,ime ASC";
 $result2=mysqli_query($mysqli,$sql2) or die;
-while ($row2=$result->fetch_assoc()) {
+while ($row2=$result2->fetch_assoc()) {
 	$idi=$row2['idi'];
 	$prezime=$row2['prezime'];
 	$ime=$row2['ime'];
@@ -33,13 +33,13 @@ while ($row2=$result->fetch_assoc()) {
 	$razlika=$danas-$datum;
 	$godina=floor($razlika/31556926);
 	if (in_array($idi, $prisutniy)) {
-		$prisutni1.='<li class="ui-state-highlight" id="'.$idi.'">'.$prezime.' '.$ime.' ('.$godina.', '.$odred.')<img src="upload_pic/T_2_'.$oid.'.jpg" style="float:right;height:15px;opacity:0.6" /></li>';
+		$prisutni1.='<li class="ui-state-highlight" id="'.$idi.'" style="overflow:hidden"><div class="shorten">'.$prezime.' '.$ime.' ('.$godina.', '.$odred.')</div><img src="upload_pic/T_2_'.$oid.'.jpg" style="float:right;height:15px;opacity:0.6" /></li>';
 	}
 	elseif (in_array($idi,$neplatili)) {
-		$prisutnis.='<li class="ui-state-neplatise" id="'.$idi.'">'.$prezime.' '.$ime.' ('.$godina.', '.$odred.')<img src="upload_pic/T_2_'.$oid.'.jpg" style="float:right;height:15px;opacity:0.6" /></li>';
+		$prisutnis.='<li class="ui-state-neplatise" id="'.$idi.'" style="overflow:hidden"><div class="shorten">'.$prezime.' '.$ime.' ('.$godina.', '.$odred.')</div><img src="upload_pic/T_2_'.$oid.'.jpg" style="float:right;height:15px;opacity:0.6" /></li>';
 	}
 	else {
-		$prisutni2.='<li class="ui-state-default" id="'.$idi.'">'.$prezime.' '.$ime.' ('.$godina.', '.$odred.')<img src="upload_pic/T_2_'.$oid.'.jpg" style="float:right;height:15px;opacity:0.6" /></li>';
+		$prisutni2.='<li class="ui-state-default" id="'.$idi.'" style="overflow:hidden"><div class="shorten">'.$prezime.' '.$ime.' ('.$godina.', '.$odred.')</div><img src="upload_pic/T_2_'.$oid.'.jpg" style="float:right;height:15px;opacity:0.6" /></li>';
 	}
 }
 if (strtotime($datkraj)>time()) $spec=2;

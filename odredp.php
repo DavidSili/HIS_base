@@ -64,7 +64,7 @@ echo '</div><div style="width:265px;clear:both">';
 $IDa=$ID;
 $sql2='SELECT ime, prezime, funkcije FROM imenik WHERE funkcije!="" AND odred="'.$IDa.'"';
 $result2=mysqli_query($mysqli,$sql2);
-while($row2=$result->fetch_assoc()) {
+while($row2=$result2->fetch_assoc()) {
 
 	foreach($row2 as $xx => $yy) {
 		$$xx=$yy;

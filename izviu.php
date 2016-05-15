@@ -132,14 +132,13 @@ $row=$result->fetch_assoc();
 $oid=$row['zaodred'];
 
 $odredx="";
-$sql='SELECT `imenik`.`ID` AS ida,  `imenik`.`ime` ,  `imenik`.`prezime` ,  `odredi`.`ime` AS odred, IF(  `clanarine` LIKE  "2014%", 1, 2 ) AS clanarina
+$sql='SELECT `imenik`.`ID` AS ida,  `imenik`.`ime` ,  `imenik`.`prezime` ,  `odredi`.`ime` AS odred, IF(  `clanarine` LIKE  "%2016%", 1, 2 ) AS clanarina
 FROM imenik
 LEFT JOIN odredi ON imenik.odred = odredi.ID ';
 if ($level<3) $sql.='WHERE imenik.odred = "'.$oid.'" ';
 $sql.='ORDER BY  `imenik`.`odred` ,  `clanarina` ,  `imenik`.`prezime` ,  `imenik`.`ime`';
 $result=mysqli_query($mysqli,$sql) or die;
 while($row=$result->fetch_assoc()) {
-
 foreach($row as $xx => $yy) {
 	$$xx=$yy;
 }
@@ -429,27 +428,24 @@ for ($i = $godina; $i >= 2010; $i--) {
 		</select>
 		<div style="clear:both;"></div>
 	</div>
-	<div class="iur">
-		<div class="iul" style="border-bottom:solid thin #000;padding-bottom:34px">komentar</div>
-		<textarea id="ykomentar" style="width:153px" rows="3" name="komentar" class="iud"></textarea>
-		<div style="clear:both;"></div>
-	</div>
-	<div>
-		<div class="iul" style="text-align:center;border-bottom:solid thin #000;padding-bottom:8px">
+	<div class="iur" style="height:200px;width:363px">
+		<div class="iul" style="padding-bottom:10px">komentar</div>
+		<textarea id="ykomentar" style="width:153px;float:right" rows="3" name="komentar" class="iud"></textarea>
+		<div class="iul" style="text-align:center">
 			<input type="hidden" name="nextid" id="nextid" value="<?php echo $ai; ?>" />
 			<input type="hidden" name="nid" id="nid" value="<?php echo $xid; ?>" />
 			<div ID="blacklink"><a href="#" onclick="change_pic()" title="Ukoliko ste promenili sliku, da bi videli novu, pritisnite 'CTRL+F5' ili 'SHIFT+F5'"><b>- Osveži sliku -</b></a></div>
 			<a id="linkzasliku" href="uploader.php?tip=1&ID=<?php echo $xid; ?>" target="_blank"><img ID="imager" src="<?php
-$timestamp=time();
-$filename = 'upload_pic/T_1_'.$ai.'.jpg?timestamp='.$timestamp;
+				$timestamp=time();
+				$filename = 'upload_pic/T_1_'.$ai.'.jpg?timestamp='.$timestamp;
 
-if (file_exists($filename)) {
-    echo 'upload_pic/T_1_'.$ai.'.jpg?timestamp='.$timestamp;
-} else {
-    echo "images/nepoznat.gif";
-}
-			
-			?>" style="margin-top:5px;border:4px ridge #fff;width:100px;height:100px" title="Klikni na sliku da je uneseš ili promeniš"/></a>
+				if (file_exists($filename)) {
+					echo 'upload_pic/T_1_'.$ai.'.jpg?timestamp='.$timestamp;
+				} else {
+					echo "images/nepoznat.gif";
+				}
+
+				?>" style="margin-top:5px;border:4px ridge #fff;width:100px;height:100px" title="Klikni na sliku da je uneseš ili promeniš"/></a>
 		</div>
 	</div>
 </div>

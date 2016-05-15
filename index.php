@@ -88,44 +88,44 @@ if ($godina<10 AND $uzrast<1) {
 echo '<div style="padding-left:20px"><b>Poletarci</b></div>';
 $uzrast=1;
 }
-elseif ($godina>9 AND $godina<15 AND $uzrast<2) {
+elseif ($godina>9 AND $godina<16 AND $uzrast<2) {
 echo '<div style="padding-left:20px"><b>Izviđači</b></div>';
 $uzrast=2;
 }
-elseif ($godina>14 AND $uzrast<3) {
+elseif ($godina>15 AND $uzrast<3) {
 echo '<div style="padding-left:20px"><b>Skauti</b></div>';
 $uzrast=3;
 }
 echo '<div>'.$prezime.' '.$ime.' ('.$godina.')';
 if ($godina<6) {
-	if ($razlika>181479156) {
-		$preostalo=floor((189341556-$razlika)/86400)*(-1);
+	if ($razlika>181332000) {
+		$preostalo=floor((189216000-$razlika)/86400)*(-1);
 		echo ' <span style="color:#555" title="preostalo vremena do sledeće starosne grupe">('.$preostalo.')</span>';
 	}
 }
 if ($godina>5 AND $godina<10) {
-	if ($razlika>307706860) {
-		$preostalo=floor((315569260-$razlika)/86400)*(-1);
+	if ($razlika>307476000) {
+		$preostalo=floor((315360000-$razlika)/86400)*(-1);
 		echo ' <span style="color:#555" title="preostalo vremena do sledeće starosne grupe">('.$preostalo.')</span>';
 	}
-	if ($razlika<197203956) {
-		$proslo=floor(($razlika-189341556)/86400);
+	if ($razlika<197100000) {
+		$proslo=floor(($razlika-189216000)/86400);
 		echo ' <span style="color:#555" title="vreme koje je prošlo od prelaska u starosnu grupu">(+'.$proslo.')</span>';
 	}
 }
-if ($godina>9 AND $godina<15) {
-	if ($razlika>465512416) {
-		$preostalo=floor((473374816-$razlika)/86400)*(-1);
+if ($godina>9 AND $godina<16) {
+	if ($razlika>496692000) {
+		$preostalo=floor((504576000-$razlika)/86400)*(-1);
 		echo ' <span style="color:#555" title="preostalo vremena do sledeće starosne grupe">('.$preostalo.')</span>';
 	}
-	if ($razlika<323431660) {
-		$proslo=floor(($razlika-315569260)/86400);
+	if ($razlika<323244000) {
+		$proslo=floor(($razlika-315360000)/86400);
 		echo ' <span style="color:#555" title="vreme koje je prošlo od prelaska u starosnu grupu">(+'.$proslo.')</span>';
 	}
 }
-if ($godina>14) {
-	if ($razlika<481237216) {
-		$proslo=floor(($razlika-473374816)/86400);
+if ($godina>15) {
+	if ($razlika<512460000) {
+		$proslo=floor(($razlika-504576000)/86400);
 		echo ' <span style="color:#555" title="vreme koje je prošlo od prelaska u starosnu grupu">(+'.$proslo.')</span>';
 	}
 }

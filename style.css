@@ -184,3 +184,14 @@ ul {list-style:none;}
 	float:left;
 	margin-right:6px;
 }
+.dugme2 {
+	font-size:10pt !important;
+}
+.shorten {
+	width:186px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	height:14px;
+	float:left;
+}
