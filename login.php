@@ -2,7 +2,7 @@
  
 session_start();
 include 'config.php';
-if (isset($_GET["url"])) $url=$_GET["url"];
+if (isset($_GET["url"])) $url=$mysqli->real_escape_string($_GET["url"]);
 else $url="index.php";
 
 if (isset($_GET['login'])) {
@@ -63,13 +63,25 @@ if (isset($_GET['login'])) {
 </head>
 <body>
 
+<div id="logbgnd"></div>
 <div id="logform">
 <div style="text-align:center;margin:10px 0 20px;font-size:16px"><b>Prijava</b></div>
 	<form name="form1" method="post" action="?login=1">
-		<div style="height:34px"><div style="width:120px;float:left;text-align:right;margin:4px 3px 0 0">korisničko ime: </div><input name="username" type="text" id="username" /><br/></div>
-		<div><div style="width:120px;float:left;text-align:right;margin:4px 3px 0 0">šifra: </div><input name="password" type="password" id="password" /><br/></div>
-		<div style="margin-top:10px;text-align:center"><input type="submit" name="Submit" value="Login" /></div>
-		<div id="blacklink" style="line-height:20px"><a href="register.php">Registracija</a><br/><a href="forgot.php">Zaboravljeno korisničko ime/šifra</a></div>
+		<div style="height:34px">
+			<div style="width:120px;float:left;text-align:right;margin:4px 3px 0 0">korisničko ime: </div>
+			<input name="username" type="text" id="username" /><br/>
+		</div>
+		<div>
+			<div style="width:120px;float:left;text-align:right;margin:4px 3px 0 0">šifra: </div>
+			<input name="password" type="password" id="password" /><br/>
+		</div>
+		<div style="margin-top:10px;text-align:center">
+			<input type="submit" name="Submit" value="Login" />
+		</div>
+		<div id="blacklink" style="line-height:20px">
+			<a href="register.php">Registracija</a><br/>
+			<a href="forgot.php">Zaboravljeno korisničko ime/šifra</a>
+		</div>
 		<input type="hidden" name="pass_url" value="<?php echo $url; ?>"/>
 	</form>
 </div>

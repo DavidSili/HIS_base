@@ -14,7 +14,7 @@
 	}
 if(isset($_POST) && !empty($_POST)) {
 
-	$sifra=$_POST['psifra'];
+	$sifra=$mysqli->real_escape_string($_POST['psifra']);
 	$hash = hash('sha256', $sifra);
 	$salt = md5(uniqid(rand(), true));
 	$salt = substr($salt, 0, 11);

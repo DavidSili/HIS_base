@@ -1,6 +1,7 @@
 <?php
 include '../config.php';
 $posebno = isset($_GET["posebno"]) ? $_GET["posebno"] : 0;
+$posebno = $mysqli->real_escape_string($posebno);
 
 $sql="SELECT * FROM predmeti WHERE `ID`=$posebno";
 $result=mysqli_query($mysqli,$sql) or die;

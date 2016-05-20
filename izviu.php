@@ -18,7 +18,7 @@ if(isset($_POST) && !empty($_POST)) {
 	$funkcije=array();
 	$clanarine=array();
 	foreach($_POST as $xx => $yy) {
-		$$xx=$yy;
+		$$xx=$mysqli->real_escape_string($yy);
 	}
 	if (empty($datrod)==false) {
 	$datrodx=date('Y-m-d',strtotime($datrod));
@@ -48,7 +48,7 @@ if(isset($_POST) && !empty($_POST)) {
 	$dattime=date('G:i:s j.n.Y.');
 	
 	if (isset($_POST['del'])) {
-		$del=$_POST['del'];
+		$del=$mysqli->real_escape_string($_POST['del']);
 		$nid=$del;
 		$sql='DELETE FROM imenik WHERE ID="'.$del.'"';
 		mysqli_query($mysqli,$sql) or die;

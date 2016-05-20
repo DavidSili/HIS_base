@@ -14,7 +14,7 @@
 	}
 if(isset($_POST) && !empty($_POST)) {
 	foreach($_POST as $xx => $yy) {
-		$$xx=$yy;
+		$$xx=$mysqli->real_escape_string($yy);
 
 	$dattime=date('G:i:s j.n.Y.');
 	$naziv=$xx;

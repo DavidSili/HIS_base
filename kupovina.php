@@ -14,8 +14,8 @@
 	}
 if(isset($_POST) && !empty($_POST)) {
 
-	$sorterklik=$_POST['sorterklik'];
-	$komentar=$_POST['komentar'];
+	$sorterklik=$mysqli->real_escape_string($_POST['sorterklik']);
+	$komentar=$mysqli->real_escape_string($_POST['komentar']);
 	$sorterklik=substr($sorterklik, 0, -2);
 	$sorter=explode(',y,',$sorterklik);
 	$sorted="";

@@ -1,6 +1,7 @@
 <?php
 include '../config.php';
 $posebno = isset($_GET["posebno"]) ? $_GET["posebno"] : 0;
+$posebno = $mysqli->real_escape_string($posebno);
 $prisutni2="";
 $sql2="SELECT imenik.ID idi, imenik.ime ime, imenik.prezime prezime, imenik.datrod datum, imenik.odred oid, odredi.ime odred FROM imenik, odredi WHERE imenik.odred=odredi.ID ORDER BY prezime,ime ASC";
 $result2=mysqli_query($mysqli,$sql2) or die;

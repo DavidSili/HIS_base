@@ -17,13 +17,13 @@ if(isset($_POST) && !empty($_POST)) {
 	$datposx="";
 	$datprimx="";
 	if (isset($_POST['del'])) {
-		$del=$_POST['del'];
+		$del=$mysqli->real_escape_string($_POST['del']);
 		$sql='DELETE FROM narudzbine WHERE ID="'.$del.'"';
 		mysqli_query($mysqli,$sql) or die;
 	}
 	else {
 	foreach($_POST as $xx => $yy) {
-		$$xx=$yy;
+		$$xx=$mysqli->real_escape_string($yy);
 	}
 	$sql0='SELECT * FROM narudzbine WHERE ID="'.$idx.'"';
 	$result0=mysqli_query($mysqli,$sql0);

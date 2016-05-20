@@ -16,7 +16,7 @@
 if(isset($_POST) && !empty($_POST)) {
 
 	foreach($_POST as $xx => $yy) {
-		$$xx=$yy;
+		$$xx=$mysqli->real_escape_string($yy);
 	}
 	
 	if ($do=="1") {
@@ -27,10 +27,10 @@ if(isset($_POST) && !empty($_POST)) {
 		}
 	}
 	elseif ($do=="2") {
-		$xime=$_POST['ime'];
-		$xusername=$_POST['username'];
-		$xpass=$_POST['pass'];
-		$xemail=$_POST['email'];
+		$xime=$mysqli->real_escape_string($_POST['ime']);
+		$xusername=$mysqli->real_escape_string($_POST['username']);
+		$xpass=$mysqli->real_escape_string($_POST['pass']);
+		$xemail=$mysqli->real_escape_string($_POST['email']);
 		$hash = hash('sha256', $xpass);
 		$salt = md5(uniqid(rand(), true));
 		$salt = substr($salt, 0, 11);

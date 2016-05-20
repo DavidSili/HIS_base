@@ -3,15 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="e37d7134-4e2a-4370-88a3-f3dcca260a52" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adminpanel.php" afterPath="$PROJECT_DIR$/adminpanel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/iimenik.php" afterPath="$PROJECT_DIR$/ajax/iimenik.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ikampovi.php" afterPath="$PROJECT_DIR$/ajax/ikampovi.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/iobuke.php" afterPath="$PROJECT_DIR$/ajax/iobuke.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/iodredi.php" afterPath="$PROJECT_DIR$/ajax/iodredi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/ipredmeti.php" afterPath="$PROJECT_DIR$/ajax/ipredmeti.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/isvi.php" afterPath="$PROJECT_DIR$/ajax/isvi.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/arhiva.php" afterPath="$PROJECT_DIR$/arhiva.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/izviu.php" afterPath="$PROJECT_DIR$/izviu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kampp.php" afterPath="$PROJECT_DIR$/kampp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kampu.php" afterPath="$PROJECT_DIR$/kampu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kupovina.php" afterPath="$PROJECT_DIR$/kupovina.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/narudzbinep.php" afterPath="$PROJECT_DIR$/narudzbinep.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obukep.php" afterPath="$PROJECT_DIR$/obukep.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/odredp.php" afterPath="$PROJECT_DIR$/odredp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obukeu.php" afterPath="$PROJECT_DIR$/obukeu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/odredu.php" afterPath="$PROJECT_DIR$/odredu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/predmetil.php" afterPath="$PROJECT_DIR$/predmetil.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/predmetiu.php" afterPath="$PROJECT_DIR$/predmetiu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profil.php" afterPath="$PROJECT_DIR$/profil.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="HISbase.iws" />
@@ -34,102 +43,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="izviu.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/izviu.php">
+      <file leaf-file-name="iimenik.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ajax/iimenik.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.5849056">
-              <caret line="526" column="12" selection-start-line="526" selection-start-column="12" selection-end-line="526" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.11724138">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#div#16;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#div#16;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1463309522441" expanded="true" signature="1170:1208" placeholder="DELETE FROM ..." />
-                <marker date="1463309522441" expanded="true" signature="1285:2352" placeholder="INSERT INTO imenik..." />
-                <marker date="1463309522441" expanded="true" signature="2411:2457" placeholder="SELECT menja..imenik..." />
-                <marker date="1463309522441" expanded="true" signature="2607:3700" placeholder="UPDATE imeni..." />
-                <marker date="1463309522441" expanded="true" signature="3754:3800" placeholder="SELECT ID FR..imenik..." />
-                <marker date="1463309522441" expanded="true" signature="5819:5877" placeholder="SELECT zaodr..users..." />
-                <marker date="1463309522441" expanded="true" signature="5993:6197" placeholder="SELECT `imen..imenik..." />
-                <marker date="1463309522441" expanded="true" signature="6513:6547" placeholder="..." />
-                <marker date="1463309522441" expanded="true" signature="10704:10763" placeholder="SELECT ID, i..odredi..." />
-                <marker date="1463309522441" expanded="true" signature="10810:10849" placeholder="SELECT ID, i..odredi..." />
-                <marker date="1463309522441" expanded="true" signature="15874:15899" placeholder="SELECT naziv..vestine..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kampu.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kampu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21206896">
-              <caret line="354" column="29" selection-start-line="354" selection-start-column="29" selection-end-line="354" selection-end-column="29" />
-              <folding>
-                <marker date="1463148249497" expanded="true" signature="1474:1513" placeholder="DELETE FROM ..." />
-                <marker date="1463148249497" expanded="true" signature="1590:1885" placeholder="INSERT INTO kampovi..." />
-                <marker date="1463148249497" expanded="true" signature="1944:1991" placeholder="SELECT menja..kampovi..." />
-                <marker date="1463148249497" expanded="true" signature="2110:2442" placeholder="UPDATE kampo..." />
-                <marker date="1463148249497" expanded="true" signature="2496:2543" placeholder="SELECT ID FR..kampovi..." />
-                <marker date="1463148249497" expanded="true" signature="4569:4613" placeholder="SELECT ID,na..kampovi..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ikampovi.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ajax/ikampovi.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.269231">
-              <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
-              <folding>
-                <marker date="1463321354048" expanded="true" signature="97:130" placeholder="SELECT * FRO..kampovi..." />
-                <marker date="1463321354048" expanded="true" signature="629:820" placeholder="SELECT imeni..imenik..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.90566">
-              <caret line="190" column="13" selection-start-line="190" selection-start-column="13" selection-end-line="190" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="narudzbinep.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/narudzbinep.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.576923">
-              <caret line="169" column="43" selection-start-line="169" selection-start-column="43" selection-end-line="169" selection-end-column="43" />
-              <folding>
-                <marker date="1463321807514" expanded="true" signature="457:499" placeholder="DELETE FROM ..." />
-                <marker date="1463321807514" expanded="true" signature="606:650" placeholder="SELECT * FRO..narudzbine..." />
-                <marker date="1463321807514" expanded="true" signature="809:830" placeholder="UPDATE narud..." />
-                <marker date="1463321807514" expanded="true" signature="2310:2341" placeholder="SELECT usern..users..." />
-                <marker date="1463321807514" expanded="true" signature="2571:2923" placeholder="SELECT *, ( ..narudzbine..." />
-                <marker date="1463321807514" expanded="true" signature="2937:3265" placeholder="SELECT *, ( ..narudzbine..." />
-                <marker date="1463321807514" expanded="true" signature="3844:3929" placeholder="..." />
-                <marker date="1463321807514" expanded="true" signature="4773:4795" placeholder="SELECT * FRO..predmeti..." />
-                <marker date="1463321807514" expanded="true" signature="5181:5221" placeholder="..." />
-                <marker date="1463321807514" expanded="true" signature="5235:5400" placeholder="..." />
-                <marker date="1463321807514" expanded="true" signature="5450:5488" placeholder="..." />
-                <marker date="1463321807514" expanded="true" signature="5521:5559" placeholder="..." />
-                <marker date="1463321807514" expanded="true" signature="5592:5630" placeholder="..." />
-                <marker date="1463321807514" expanded="true" signature="5719:5762" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="isvi.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ajax/isvi.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385">
-              <caret line="17" column="82" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
-              <folding>
-                <marker date="1463321236396" expanded="true" signature="112:303" placeholder="SELECT imeni..imenik..." />
+                <marker date="1463746848830" expanded="true" signature="147:179" placeholder="SELECT * FRO..imenik..." />
               </folding>
             </state>
           </provider>
@@ -144,30 +64,30 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/config.php" />
-        <option value="$PROJECT_DIR$/kupovina.php" />
-        <option value="$PROJECT_DIR$/kampu.php" />
         <option value="$PROJECT_DIR$/izvip.php" />
-        <option value="$PROJECT_DIR$/arhiva.php" />
-        <option value="$PROJECT_DIR$/adminpanel.php" />
-        <option value="$PROJECT_DIR$/obukeu.php" />
-        <option value="$PROJECT_DIR$/odredu.php" />
-        <option value="$PROJECT_DIR$/predmetil.php" />
-        <option value="$PROJECT_DIR$/predmetiu.php" />
-        <option value="$PROJECT_DIR$/profil.php" />
-        <option value="$PROJECT_DIR$/ajax/iimenik.php" />
-        <option value="$PROJECT_DIR$/ajax/iodredi.php" />
-        <option value="$PROJECT_DIR$/ajax/ipredmeti.php" />
-        <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/odredp.php" />
         <option value="$PROJECT_DIR$/kampp.php" />
         <option value="$PROJECT_DIR$/obukep.php" />
-        <option value="$PROJECT_DIR$/ajax/iobuke.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/izviu.php" />
-        <option value="$PROJECT_DIR$/ajax/isvi.php" />
-        <option value="$PROJECT_DIR$/ajax/ikampovi.php" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/izviu.php" />
+        <option value="$PROJECT_DIR$/adminpanel.php" />
+        <option value="$PROJECT_DIR$/arhiva.php" />
         <option value="$PROJECT_DIR$/narudzbinep.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/kupovina.php" />
+        <option value="$PROJECT_DIR$/kampu.php" />
+        <option value="$PROJECT_DIR$/profil.php" />
+        <option value="$PROJECT_DIR$/predmetiu.php" />
+        <option value="$PROJECT_DIR$/predmetil.php" />
+        <option value="$PROJECT_DIR$/odredu.php" />
+        <option value="$PROJECT_DIR$/obukeu.php" />
+        <option value="$PROJECT_DIR$/ajax/isvi.php" />
+        <option value="$PROJECT_DIR$/ajax/ipredmeti.php" />
+        <option value="$PROJECT_DIR$/ajax/iodredi.php" />
+        <option value="$PROJECT_DIR$/ajax/iobuke.php" />
+        <option value="$PROJECT_DIR$/ajax/ikampovi.php" />
+        <option value="$PROJECT_DIR$/ajax/iimenik.php" />
       </list>
     </option>
   </component>
@@ -183,7 +103,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1370" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -227,6 +147,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="HIS_base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HISbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HIS_base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ajax" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -282,10 +216,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1370" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15300146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -320,25 +254,184 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/odredp.php">
+    <entry file="file://$PROJECT_DIR$/izviu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="526" column="12" selection-start-line="526" selection-start-column="12" selection-end-line="526" selection-end-column="12" />
+          <folding>
+            <marker date="1463745961516" expanded="true" signature="1228:1266" placeholder="DELETE FROM ..." />
+            <marker date="1463745961516" expanded="true" signature="1343:2410" placeholder="INSERT INTO imenik..." />
+            <marker date="1463745961516" expanded="true" signature="2469:2515" placeholder="SELECT menja..imenik..." />
+            <marker date="1463745961516" expanded="true" signature="2665:3758" placeholder="UPDATE imeni..." />
+            <marker date="1463745961516" expanded="true" signature="3812:3858" placeholder="SELECT ID FR..imenik..." />
+            <marker date="1463745961516" expanded="true" signature="5877:5935" placeholder="SELECT zaodr..users..." />
+            <marker date="1463745961516" expanded="true" signature="6051:6255" placeholder="SELECT `imen..imenik..." />
+            <marker date="1463745961516" expanded="true" signature="6571:6605" placeholder="..." />
+            <marker date="1463745961516" expanded="true" signature="10762:10821" placeholder="SELECT ID, i..odredi..." />
+            <marker date="1463745961516" expanded="true" signature="10868:10907" placeholder="SELECT ID, i..odredi..." />
+            <marker date="1463745961516" expanded="true" signature="15932:15957" placeholder="SELECT naziv..vestine..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kampu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1463305187703" expanded="true" signature="967:1003" placeholder="SELECT * FRO..odredi..." />
-            <marker date="1463305187703" expanded="true" signature="1473:1502" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="1517:1546" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="1903:1943" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="1989:2000" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="2370:2391" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="2444:2466" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="2488:2569" placeholder="SELECT ime, ..imenik..." />
-            <marker date="1463305187703" expanded="true" signature="2758:2797" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="2904:2943" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="3053:3092" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="3204:3243" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="3354:3393" placeholder="..." />
+            <marker date="1463746455109" expanded="true" signature="1532:1571" placeholder="DELETE FROM ..." />
+            <marker date="1463746455109" expanded="true" signature="1648:1943" placeholder="INSERT INTO kampovi..." />
+            <marker date="1463746455109" expanded="true" signature="2002:2049" placeholder="SELECT menja..kampovi..." />
+            <marker date="1463746455109" expanded="true" signature="2168:2500" placeholder="UPDATE kampo..." />
+            <marker date="1463746455109" expanded="true" signature="2554:2601" placeholder="SELECT ID FR..kampovi..." />
+            <marker date="1463746455109" expanded="true" signature="4627:4671" placeholder="SELECT ID,na..kampovi..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ikampovi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
+          <folding>
+            <marker date="1463746843575" expanded="true" signature="147:180" placeholder="SELECT * FRO..kampovi..." />
+            <marker date="1463746843575" expanded="true" signature="679:870" placeholder="SELECT imeni..imenik..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="190" column="13" selection-start-line="190" selection-start-column="13" selection-end-line="190" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/narudzbinep.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="169" column="43" selection-start-line="169" selection-start-column="43" selection-end-line="169" selection-end-column="43" />
+          <folding>
+            <marker date="1463746280929" expanded="true" signature="486:528" placeholder="DELETE FROM ..." />
+            <marker date="1463746280929" expanded="true" signature="664:708" placeholder="SELECT * FRO..narudzbine..." />
+            <marker date="1463746280929" expanded="true" signature="867:888" placeholder="UPDATE narud..." />
+            <marker date="1463746280929" expanded="true" signature="2368:2399" placeholder="SELECT usern..users..." />
+            <marker date="1463746280929" expanded="true" signature="2629:2981" placeholder="SELECT *, ( ..narudzbine..." />
+            <marker date="1463746280929" expanded="true" signature="2995:3323" placeholder="SELECT *, ( ..narudzbine..." />
+            <marker date="1463746280929" expanded="true" signature="3902:3987" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="4831:4853" placeholder="SELECT * FRO..predmeti..." />
+            <marker date="1463746280929" expanded="true" signature="5239:5279" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="5293:5458" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="5508:5546" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="5579:5617" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="5650:5688" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="5777:5820" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/isvi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="82" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
+          <folding>
+            <marker date="1463746813837" expanded="true" signature="162:353" placeholder="SELECT imeni..imenik..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/izviu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="526" column="12" selection-start-line="526" selection-start-column="12" selection-end-line="526" selection-end-column="12" />
+          <folding>
+            <marker date="1463745961516" expanded="true" signature="1228:1266" placeholder="DELETE FROM ..." />
+            <marker date="1463745961516" expanded="true" signature="1343:2410" placeholder="INSERT INTO imenik..." />
+            <marker date="1463745961516" expanded="true" signature="2469:2515" placeholder="SELECT menja..imenik..." />
+            <marker date="1463745961516" expanded="true" signature="2665:3758" placeholder="UPDATE imeni..." />
+            <marker date="1463745961516" expanded="true" signature="3812:3858" placeholder="SELECT ID FR..imenik..." />
+            <marker date="1463745961516" expanded="true" signature="5877:5935" placeholder="SELECT zaodr..users..." />
+            <marker date="1463745961516" expanded="true" signature="6051:6255" placeholder="SELECT `imen..imenik..." />
+            <marker date="1463745961516" expanded="true" signature="6571:6605" placeholder="..." />
+            <marker date="1463745961516" expanded="true" signature="10762:10821" placeholder="SELECT ID, i..odredi..." />
+            <marker date="1463745961516" expanded="true" signature="10868:10907" placeholder="SELECT ID, i..odredi..." />
+            <marker date="1463745961516" expanded="true" signature="15932:15957" placeholder="SELECT naziv..vestine..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kampu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1463746455109" expanded="true" signature="1532:1571" placeholder="DELETE FROM ..." />
+            <marker date="1463746455109" expanded="true" signature="1648:1943" placeholder="INSERT INTO kampovi..." />
+            <marker date="1463746455109" expanded="true" signature="2002:2049" placeholder="SELECT menja..kampovi..." />
+            <marker date="1463746455109" expanded="true" signature="2168:2500" placeholder="UPDATE kampo..." />
+            <marker date="1463746455109" expanded="true" signature="2554:2601" placeholder="SELECT ID FR..kampovi..." />
+            <marker date="1463746455109" expanded="true" signature="4627:4671" placeholder="SELECT ID,na..kampovi..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ikampovi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
+          <folding>
+            <marker date="1463746843575" expanded="true" signature="147:180" placeholder="SELECT * FRO..kampovi..." />
+            <marker date="1463746843575" expanded="true" signature="679:870" placeholder="SELECT imeni..imenik..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="190" column="13" selection-start-line="190" selection-start-column="13" selection-end-line="190" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/narudzbinep.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="169" column="43" selection-start-line="169" selection-start-column="43" selection-end-line="169" selection-end-column="43" />
+          <folding>
+            <marker date="1463746280929" expanded="true" signature="486:528" placeholder="DELETE FROM ..." />
+            <marker date="1463746280929" expanded="true" signature="664:708" placeholder="SELECT * FRO..narudzbine..." />
+            <marker date="1463746280929" expanded="true" signature="867:888" placeholder="UPDATE narud..." />
+            <marker date="1463746280929" expanded="true" signature="2368:2399" placeholder="SELECT usern..users..." />
+            <marker date="1463746280929" expanded="true" signature="2629:2981" placeholder="SELECT *, ( ..narudzbine..." />
+            <marker date="1463746280929" expanded="true" signature="2995:3323" placeholder="SELECT *, ( ..narudzbine..." />
+            <marker date="1463746280929" expanded="true" signature="3902:3987" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="4831:4853" placeholder="SELECT * FRO..predmeti..." />
+            <marker date="1463746280929" expanded="true" signature="5239:5279" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="5293:5458" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="5508:5546" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="5579:5617" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="5650:5688" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="5777:5820" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/isvi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="82" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
+          <folding>
+            <marker date="1463746813837" expanded="true" signature="162:353" placeholder="SELECT imeni..imenik..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odredp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -353,21 +446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="76" column="34" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="34" />
-          <folding>
-            <marker date="1463307354935" expanded="true" signature="1137:1255" placeholder="SELECT odred..odredi..." />
-            <marker date="1463307354935" expanded="true" signature="1393:1739" placeholder="SELECT ID, i..." />
-            <marker date="1463307354935" expanded="true" signature="2172:2183" placeholder="..." />
-            <marker date="1463307354935" expanded="true" signature="2268:2351" placeholder="SELECT ime, ..imenik..." />
-            <marker date="1463307354935" expanded="true" signature="2661:2678" placeholder="..." />
-            <marker date="1463307354935" expanded="true" signature="2786:2803" placeholder="..." />
-            <marker date="1463307354935" expanded="true" signature="2896:2913" placeholder="..." />
-            <marker date="1463307354935" expanded="true" signature="3118:3128" placeholder="..." />
-            <marker date="1463307354935" expanded="true" signature="3347:3357" placeholder="..." />
-            <marker date="1463307354935" expanded="true" signature="3534:3544" placeholder="..." />
-            <marker date="1463307354935" expanded="true" signature="3767:3777" placeholder="..." />
-            <marker date="1463307354935" expanded="true" signature="3954:3964" placeholder="..." />
-            <marker date="1463307354935" expanded="true" signature="4165:4175" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -375,15 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="92" column="41" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
-          <folding>
-            <marker date="1463148829502" expanded="true" signature="499:595" placeholder="UPDATE users..." />
-            <marker date="1463148829502" expanded="true" signature="924:979" placeholder="SELECT * FRO..users..." />
-            <marker date="1463148829502" expanded="true" signature="1079:1128" placeholder="SELECT * FRO..users..." />
-            <marker date="1463148829502" expanded="true" signature="1273:1417" placeholder="INSERT INTO users..." />
-            <marker date="1463148829502" expanded="true" signature="2923:2956" placeholder="SELECT ID, i..odredi..." />
-            <marker date="1463148829502" expanded="true" signature="3213:3288" placeholder="SELECT *, IF..users..." />
-            <marker date="1463148829502" expanded="true" signature="4305:4316" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -391,23 +460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="41" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="41" />
-          <folding>
-            <marker date="1463148829648" expanded="true" signature="457:499" placeholder="DELETE FROM ..." />
-            <marker date="1463148829648" expanded="true" signature="606:650" placeholder="SELECT * FRO..narudzbine..." />
-            <marker date="1463148829648" expanded="true" signature="810:831" placeholder="UPDATE narud..." />
-            <marker date="1463148829648" expanded="true" signature="2310:2341" placeholder="SELECT usern..users..." />
-            <marker date="1463148829648" expanded="true" signature="2571:2850" placeholder="SELECT *, ( ..narudzbine..." />
-            <marker date="1463148829648" expanded="true" signature="2864:3117" placeholder="SELECT *, ( ..narudzbine..." />
-            <marker date="1463148829648" expanded="true" signature="3696:3781" placeholder="..." />
-            <marker date="1463148829648" expanded="true" signature="4625:4647" placeholder="SELECT * FRO..predmeti..." />
-            <marker date="1463148829648" expanded="true" signature="5026:5066" placeholder="..." />
-            <marker date="1463148829648" expanded="true" signature="5080:5245" placeholder="..." />
-            <marker date="1463148829648" expanded="true" signature="5295:5333" placeholder="..." />
-            <marker date="1463148829648" expanded="true" signature="5366:5404" placeholder="..." />
-            <marker date="1463148829648" expanded="true" signature="5437:5475" placeholder="..." />
-            <marker date="1463148829648" expanded="true" signature="5564:5605" placeholder="..." />
-            <marker date="1463148829648" expanded="true" signature="5564:5607" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -415,319 +467,67 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64827585">
+          <caret line="190" column="13" selection-start-line="190" selection-start-column="13" selection-end-line="190" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminpanel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321234">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="15" />
           <folding>
-            <marker date="1463148634254" expanded="true" signature="964:990" placeholder="SELECT ID, i..odredi..." />
-            <marker date="1463148634254" expanded="true" signature="1148:1187" placeholder="SELECT ID id..vestine..." />
-            <marker date="1463148634254" expanded="true" signature="1375:1433" placeholder="SELECT zaodr..users..." />
-            <marker date="1463148634254" expanded="true" signature="1551:1623" placeholder="SELECT * FRO..imenik..." />
-            <marker date="1463148634254" expanded="true" signature="1638:1687" placeholder="SELECT * FRO..imenik..." />
-            <marker date="1463148634254" expanded="true" signature="2833:2862" placeholder="..." />
-            <marker date="1463148634254" expanded="true" signature="3231:3271" placeholder="..." />
-            <marker date="1463148634254" expanded="true" signature="3767:3782" placeholder="..." />
-            <marker date="1463148634254" expanded="true" signature="4803:4818" placeholder="..." />
-            <marker date="1463148634254" expanded="true" signature="6309:6324" placeholder="..." />
+            <marker date="1463745995738" expanded="true" signature="528:624" placeholder="UPDATE users..." />
+            <marker date="1463745995738" expanded="true" signature="1069:1124" placeholder="SELECT * FRO..users..." />
+            <marker date="1463745995738" expanded="true" signature="1224:1273" placeholder="SELECT * FRO..users..." />
+            <marker date="1463745995738" expanded="true" signature="1418:1562" placeholder="INSERT INTO users..." />
+            <marker date="1463745995738" expanded="true" signature="3068:3101" placeholder="SELECT ID, i..odredi..." />
+            <marker date="1463745995738" expanded="true" signature="3358:3433" placeholder="SELECT *, IF..users..." />
+            <marker date="1463745995738" expanded="true" signature="4450:4461" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arhiva.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321234">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <marker date="1463746054047" expanded="true" signature="486:528" placeholder="DELETE FROM ..." />
+            <marker date="1463746054047" expanded="true" signature="664:708" placeholder="SELECT * FRO..narudzbine..." />
+            <marker date="1463746054047" expanded="true" signature="868:889" placeholder="UPDATE narud..." />
+            <marker date="1463746054047" expanded="true" signature="2368:2399" placeholder="SELECT usern..users..." />
+            <marker date="1463746054047" expanded="true" signature="2629:2908" placeholder="SELECT *, ( ..narudzbine..." />
+            <marker date="1463746054047" expanded="true" signature="2922:3175" placeholder="SELECT *, ( ..narudzbine..." />
+            <marker date="1463746054047" expanded="true" signature="3754:3839" placeholder="..." />
+            <marker date="1463746054047" expanded="true" signature="4683:4705" placeholder="SELECT * FRO..predmeti..." />
+            <marker date="1463746054047" expanded="true" signature="5084:5124" placeholder="..." />
+            <marker date="1463746054047" expanded="true" signature="5138:5303" placeholder="..." />
+            <marker date="1463746054047" expanded="true" signature="5353:5391" placeholder="..." />
+            <marker date="1463746054047" expanded="true" signature="5424:5462" placeholder="..." />
+            <marker date="1463746054047" expanded="true" signature="5495:5533" placeholder="..." />
+            <marker date="1463746054047" expanded="true" signature="5622:5665" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.029310346">
           <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arhiva.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15">
-          <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
-          <folding>
-            <marker date="1463148829648" expanded="true" signature="457:499" placeholder="DELETE FROM ..." />
-            <marker date="1463148829648" expanded="true" signature="606:650" placeholder="SELECT * FRO..narudzbine..." />
-            <marker date="1463148829648" expanded="true" signature="810:831" placeholder="UPDATE narud..." />
-            <marker date="1463148829648" expanded="true" signature="2310:2341" placeholder="SELECT usern..users..." />
-            <marker date="1463148829648" expanded="true" signature="2571:2850" placeholder="SELECT *, ( ..narudzbine..." />
-            <marker date="1463148829648" expanded="true" signature="2864:3117" placeholder="SELECT *, ( ..narudzbine..." />
-            <marker date="1463148829648" expanded="true" signature="3696:3781" placeholder="..." />
-            <marker date="1463148829648" expanded="true" signature="4625:4647" placeholder="SELECT * FRO..predmeti..." />
-            <marker date="1463148829648" expanded="true" signature="5026:5066" placeholder="..." />
-            <marker date="1463148829648" expanded="true" signature="5080:5245" placeholder="..." />
-            <marker date="1463148829648" expanded="true" signature="5295:5333" placeholder="..." />
-            <marker date="1463148829648" expanded="true" signature="5366:5404" placeholder="..." />
-            <marker date="1463148829648" expanded="true" signature="5437:5475" placeholder="..." />
-            <marker date="1463148829648" expanded="true" signature="5564:5605" placeholder="..." />
-            <marker date="1463148829648" expanded="true" signature="5564:5607" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminpanel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3775862">
-          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-          <folding>
-            <marker date="1463148829502" expanded="true" signature="499:595" placeholder="UPDATE users..." />
-            <marker date="1463148829502" expanded="true" signature="924:979" placeholder="SELECT * FRO..users..." />
-            <marker date="1463148829502" expanded="true" signature="1079:1128" placeholder="SELECT * FRO..users..." />
-            <marker date="1463148829502" expanded="true" signature="1273:1417" placeholder="INSERT INTO users..." />
-            <marker date="1463148829502" expanded="true" signature="2923:2956" placeholder="SELECT ID, i..odredi..." />
-            <marker date="1463148829502" expanded="true" signature="3213:3288" placeholder="SELECT *, IF..users..." />
-            <marker date="1463148829502" expanded="true" signature="4305:4316" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/obukeu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.624138">
-          <caret line="127" column="33" selection-start-line="127" selection-start-column="33" selection-end-line="127" selection-end-column="33" />
-          <folding>
-            <marker date="1463150003874" expanded="true" signature="909:946" placeholder="DELETE FROM ..." />
-            <marker date="1463150003874" expanded="true" signature="1023:1270" placeholder="INSERT INTO obuke..." />
-            <marker date="1463150003874" expanded="true" signature="1329:1374" placeholder="SELECT menja..obuke..." />
-            <marker date="1463150003874" expanded="true" signature="1493:1775" placeholder="UPDATE obuke..." />
-            <marker date="1463150003874" expanded="true" signature="1829:1874" placeholder="SELECT ID FR..obuke..." />
-            <marker date="1463150003874" expanded="true" signature="3889:3938" placeholder="SELECT ID,me..obuke..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/odredu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7224138">
-          <caret line="99" column="33" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
-          <folding>
-            <marker date="1463150192589" expanded="true" signature="771:809" placeholder="DELETE FROM ..." />
-            <marker date="1463150192589" expanded="true" signature="886:1073" placeholder="INSERT INTO odredi..." />
-            <marker date="1463150192589" expanded="true" signature="1132:1178" placeholder="SELECT menja..odredi..." />
-            <marker date="1463150192589" expanded="true" signature="1290:1503" placeholder="UPDATE odred..." />
-            <marker date="1463150192589" expanded="true" signature="1557:1603" placeholder="SELECT ID FR..odredi..." />
-            <marker date="1463150192589" expanded="true" signature="3130:3233" placeholder="SELECT `ID`,..odredi..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/predmetil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1982758">
-          <caret line="96" column="33" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
-          <folding>
-            <marker date="1463150250660" expanded="true" signature="492:539" placeholder="SELECT menja..predmeti..." />
-            <marker date="1463150250660" expanded="true" signature="646:760" placeholder="UPDATE predm..." />
-            <marker date="1463150250660" expanded="true" signature="2096:2135" placeholder="SELECT * FRO..predmeti..." />
-            <marker date="1463150250660" expanded="true" signature="2295:2380" placeholder="..." />
-            <marker date="1463150250660" expanded="true" signature="3639:3661" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/predmetiu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.774138">
-          <caret line="197" column="36" selection-start-line="197" selection-start-column="36" selection-end-line="197" selection-end-column="36" />
-          <folding>
-            <marker date="1463150456249" expanded="true" signature="510:550" placeholder="DELETE FROM ..." />
-            <marker date="1463150456249" expanded="true" signature="648:787" placeholder="INSERT INTO predmeti..." />
-            <marker date="1463150456249" expanded="true" signature="846:894" placeholder="SELECT menja..predmeti..." />
-            <marker date="1463150456249" expanded="true" signature="1013:1178" placeholder="UPDATE predm..." />
-            <marker date="1463150456249" expanded="true" signature="1232:1280" placeholder="SELECT ID FR..predmeti..." />
-            <marker date="1463150456249" expanded="true" signature="2813:2878" placeholder="SELECT `ID`,..predmeti..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.4362069">
-          <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
-          <folding>
-            <marker date="1463150537510" expanded="true" signature="530:612" placeholder="UPDATE users..." />
-            <marker date="1463150537510" expanded="true" signature="1411:1428" placeholder="..." />
-            <marker date="1463150537510" expanded="true" signature="1454:1469" placeholder="..." />
-            <marker date="1463150537510" expanded="true" signature="1515:1526" placeholder="..." />
-            <marker date="1463150537510" expanded="true" signature="1549:1568" placeholder="SELECT * FRO..users..." />
-            <marker date="1463150537510" expanded="true" signature="1932:1978" placeholder="SELECT ime F..odredi..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/topbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.551724">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.08448276">
-          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-          <folding>
-            <marker date="1463150836068" expanded="true" signature="527:579" placeholder="SELECT * FRO..users..." />
-            <marker date="1463150836068" expanded="true" signature="1118:1229" placeholder="..." />
-            <marker date="1463150836068" expanded="true" signature="1352:1463" placeholder="..." />
-            <marker date="1463150836068" expanded="true" signature="1533:1644" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/izvip.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385">
-          <caret line="131" column="70" selection-start-line="131" selection-start-column="70" selection-end-line="131" selection-end-column="70" />
-          <folding>
-            <marker date="1463148634254" expanded="true" signature="964:990" placeholder="SELECT ID, i..odredi..." />
-            <marker date="1463148634254" expanded="true" signature="1148:1187" placeholder="SELECT ID id..vestine..." />
-            <marker date="1463148634254" expanded="true" signature="1375:1433" placeholder="SELECT zaodr..users..." />
-            <marker date="1463148634254" expanded="true" signature="1551:1623" placeholder="SELECT * FRO..imenik..." />
-            <marker date="1463148634254" expanded="true" signature="1638:1687" placeholder="SELECT * FRO..imenik..." />
-            <marker date="1463148634254" expanded="true" signature="2833:2862" placeholder="..." />
-            <marker date="1463148634254" expanded="true" signature="3231:3271" placeholder="..." />
-            <marker date="1463148634254" expanded="true" signature="3767:3782" placeholder="..." />
-            <marker date="1463148634254" expanded="true" signature="4803:4818" placeholder="..." />
-            <marker date="1463148634254" expanded="true" signature="6309:6324" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/odredp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31760436">
-          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
-          <folding>
-            <marker date="1463305187703" expanded="true" signature="967:1003" placeholder="SELECT * FRO..odredi..." />
-            <marker date="1463305187703" expanded="true" signature="1473:1502" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="1517:1546" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="1903:1943" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="1989:2000" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="2370:2391" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="2444:2466" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="2488:2569" placeholder="SELECT ime, ..imenik..." />
-            <marker date="1463305187703" expanded="true" signature="2758:2797" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="2904:2943" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="3053:3092" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="3204:3243" placeholder="..." />
-            <marker date="1463305187703" expanded="true" signature="3354:3393" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kampp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23076923">
-          <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
-          <folding>
-            <marker date="1463305616990" expanded="true" signature="1041:1078" placeholder="SELECT * FRO..kampovi..." />
-            <marker date="1463305616990" expanded="true" signature="1438:1519" placeholder="..." />
-            <marker date="1463305616990" expanded="true" signature="1546:1575" placeholder="..." />
-            <marker date="1463305616990" expanded="true" signature="1590:1619" placeholder="..." />
-            <marker date="1463305616990" expanded="true" signature="1978:2018" placeholder="..." />
-            <marker date="1463305616990" expanded="true" signature="2064:2075" placeholder="..." />
-            <marker date="1463305616990" expanded="true" signature="2453:2479" placeholder="..." />
-            <marker date="1463305616990" expanded="true" signature="3159:3170" placeholder="..." />
-            <marker date="1463305616990" expanded="true" signature="3184:3239" placeholder="..." />
-            <marker date="1463305616990" expanded="true" signature="3483:3656" placeholder="SELECT imeni..imenik..." />
-            <marker date="1463305616990" expanded="true" signature="4011:4175" placeholder="SELECT imeni..imenik..." />
-            <marker date="1463305616990" expanded="true" signature="4746:4801" placeholder="..." />
-            <marker date="1463305616990" expanded="true" signature="4862:4933" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/iobuke.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.038462">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding>
-            <marker date="1463305974782" expanded="true" signature="97:128" placeholder="SELECT * FRO..obuke..." />
-            <marker date="1463305974782" expanded="true" signature="627:818" placeholder="SELECT imeni..imenik..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/iodredi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <marker date="1463150727816" expanded="true" signature="97:129" placeholder="SELECT * FRO..odredi..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/iimenik.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.423077">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <marker date="1463150645817" expanded="true" signature="97:129" placeholder="SELECT * FRO..imenik..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/ipredmeti.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17586207">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <marker date="1463150744091" expanded="true" signature="97:131" placeholder="SELECT * FRO..predmeti..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kupovina.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76551723">
-          <caret line="98" column="7" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
-          <folding>
-            <marker date="1463148174880" expanded="true" signature="734:893" placeholder="INSERT INTO narudzbine..." />
-            <marker date="1463148174880" expanded="true" signature="2801:2865" placeholder="SELECT * FRO..predmeti..." />
-            <marker date="1463148174880" expanded="true" signature="3483:3509" placeholder="..." />
-            <marker date="1463148174880" expanded="true" signature="3599:3621" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/obukep.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5465517">
-          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
-          <folding>
-            <marker date="1463305723309" expanded="true" signature="1039:1074" placeholder="SELECT * FRO..obuke..." />
-            <marker date="1463305723309" expanded="true" signature="1376:1457" placeholder="..." />
-            <marker date="1463305723309" expanded="true" signature="1484:1513" placeholder="..." />
-            <marker date="1463305723309" expanded="true" signature="1528:1557" placeholder="..." />
-            <marker date="1463305723309" expanded="true" signature="1928:1968" placeholder="..." />
-            <marker date="1463305723309" expanded="true" signature="2014:2025" placeholder="..." />
-            <marker date="1463305723309" expanded="true" signature="2260:2286" placeholder="..." />
-            <marker date="1463305723309" expanded="true" signature="2447:2458" placeholder="..." />
-            <marker date="1463305723309" expanded="true" signature="2472:2527" placeholder="..." />
-            <marker date="1463305723309" expanded="true" signature="2771:2944" placeholder="SELECT imeni..imenik..." />
-            <marker date="1463305723309" expanded="true" signature="3299:3463" placeholder="SELECT imeni..imenik..." />
-            <marker date="1463305723309" expanded="true" signature="4032:4087" placeholder="..." />
-            <marker date="1463305723309" expanded="true" signature="4148:4219" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.538462">
+        <state vertical-scroll-proportion="0.25952813">
           <caret line="125" column="17" selection-start-line="125" selection-start-column="17" selection-end-line="125" selection-end-column="17" />
           <folding>
             <marker date="1463307354935" expanded="true" signature="1137:1255" placeholder="SELECT odred..odredi..." />
@@ -747,91 +547,331 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/isvi.php">
+    <entry file="file://$PROJECT_DIR$/izvip.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385">
-          <caret line="17" column="82" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
+        <state vertical-scroll-proportion="-0.29582578">
+          <caret line="131" column="70" selection-start-line="131" selection-start-column="70" selection-end-line="131" selection-end-column="70" />
           <folding>
-            <marker date="1463321236396" expanded="true" signature="112:303" placeholder="SELECT imeni..imenik..." />
+            <marker date="1463148634254" expanded="true" signature="964:990" placeholder="SELECT ID, i..odredi..." />
+            <marker date="1463148634254" expanded="true" signature="1148:1187" placeholder="SELECT ID id..vestine..." />
+            <marker date="1463148634254" expanded="true" signature="1375:1433" placeholder="SELECT zaodr..users..." />
+            <marker date="1463148634254" expanded="true" signature="1551:1623" placeholder="SELECT * FRO..imenik..." />
+            <marker date="1463148634254" expanded="true" signature="1638:1687" placeholder="SELECT * FRO..imenik..." />
+            <marker date="1463148634254" expanded="true" signature="2833:2862" placeholder="..." />
+            <marker date="1463148634254" expanded="true" signature="3231:3271" placeholder="..." />
+            <marker date="1463148634254" expanded="true" signature="3767:3782" placeholder="..." />
+            <marker date="1463148634254" expanded="true" signature="4803:4818" placeholder="..." />
+            <marker date="1463148634254" expanded="true" signature="6309:6324" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/ikampovi.php">
+    <entry file="file://$PROJECT_DIR$/kampp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.269231">
-          <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.20145191">
+          <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
           <folding>
-            <marker date="1463321354048" expanded="true" signature="97:130" placeholder="SELECT * FRO..kampovi..." />
-            <marker date="1463321354048" expanded="true" signature="629:820" placeholder="SELECT imeni..imenik..." />
+            <marker date="1463305616990" expanded="true" signature="1041:1078" placeholder="SELECT * FRO..kampovi..." />
+            <marker date="1463305616990" expanded="true" signature="1438:1519" placeholder="..." />
+            <marker date="1463305616990" expanded="true" signature="1546:1575" placeholder="..." />
+            <marker date="1463305616990" expanded="true" signature="1590:1619" placeholder="..." />
+            <marker date="1463305616990" expanded="true" signature="1978:2018" placeholder="..." />
+            <marker date="1463305616990" expanded="true" signature="2064:2075" placeholder="..." />
+            <marker date="1463305616990" expanded="true" signature="2453:2479" placeholder="..." />
+            <marker date="1463305616990" expanded="true" signature="3159:3170" placeholder="..." />
+            <marker date="1463305616990" expanded="true" signature="3184:3239" placeholder="..." />
+            <marker date="1463305616990" expanded="true" signature="3483:3656" placeholder="SELECT imeni..imenik..." />
+            <marker date="1463305616990" expanded="true" signature="4011:4175" placeholder="SELECT imeni..imenik..." />
+            <marker date="1463305616990" expanded="true" signature="4746:4801" placeholder="..." />
+            <marker date="1463305616990" expanded="true" signature="4862:4933" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.90566">
-          <caret line="190" column="13" selection-start-line="190" selection-start-column="13" selection-end-line="190" selection-end-column="13" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/narudzbinep.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.576923">
-          <caret line="169" column="43" selection-start-line="169" selection-start-column="43" selection-end-line="169" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.085299455">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding>
-            <marker date="1463321807514" expanded="true" signature="457:499" placeholder="DELETE FROM ..." />
-            <marker date="1463321807514" expanded="true" signature="606:650" placeholder="SELECT * FRO..narudzbine..." />
-            <marker date="1463321807514" expanded="true" signature="809:830" placeholder="UPDATE narud..." />
-            <marker date="1463321807514" expanded="true" signature="2310:2341" placeholder="SELECT usern..users..." />
-            <marker date="1463321807514" expanded="true" signature="2571:2923" placeholder="SELECT *, ( ..narudzbine..." />
-            <marker date="1463321807514" expanded="true" signature="2937:3265" placeholder="SELECT *, ( ..narudzbine..." />
-            <marker date="1463321807514" expanded="true" signature="3844:3929" placeholder="..." />
-            <marker date="1463321807514" expanded="true" signature="4773:4795" placeholder="SELECT * FRO..predmeti..." />
-            <marker date="1463321807514" expanded="true" signature="5181:5221" placeholder="..." />
-            <marker date="1463321807514" expanded="true" signature="5235:5400" placeholder="..." />
-            <marker date="1463321807514" expanded="true" signature="5450:5488" placeholder="..." />
-            <marker date="1463321807514" expanded="true" signature="5521:5559" placeholder="..." />
-            <marker date="1463321807514" expanded="true" signature="5592:5630" placeholder="..." />
-            <marker date="1463321807514" expanded="true" signature="5719:5762" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="486:528" placeholder="DELETE FROM ..." />
+            <marker date="1463746280929" expanded="true" signature="664:708" placeholder="SELECT * FRO..narudzbine..." />
+            <marker date="1463746280929" expanded="true" signature="867:888" placeholder="UPDATE narud..." />
+            <marker date="1463746280929" expanded="true" signature="2368:2399" placeholder="SELECT usern..users..." />
+            <marker date="1463746280929" expanded="true" signature="2629:2981" placeholder="SELECT *, ( ..narudzbine..." />
+            <marker date="1463746280929" expanded="true" signature="2995:3323" placeholder="SELECT *, ( ..narudzbine..." />
+            <marker date="1463746280929" expanded="true" signature="3902:3987" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="4831:4853" placeholder="SELECT * FRO..predmeti..." />
+            <marker date="1463746280929" expanded="true" signature="5239:5279" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="5293:5458" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="5508:5546" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="5579:5617" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="5650:5688" placeholder="..." />
+            <marker date="1463746280929" expanded="true" signature="5777:5820" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/izviu.php">
+    <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.5849056">
-          <caret line="526" column="12" selection-start-line="526" selection-start-column="12" selection-end-line="526" selection-end-column="12" />
+        <state vertical-scroll-proportion="-1.4373865">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding>
-            <element signature="n#style#0;n#div#16;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#16;n#div#5;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1463309522441" expanded="true" signature="1170:1208" placeholder="DELETE FROM ..." />
-            <marker date="1463309522441" expanded="true" signature="1285:2352" placeholder="INSERT INTO imenik..." />
-            <marker date="1463309522441" expanded="true" signature="2411:2457" placeholder="SELECT menja..imenik..." />
-            <marker date="1463309522441" expanded="true" signature="2607:3700" placeholder="UPDATE imeni..." />
-            <marker date="1463309522441" expanded="true" signature="3754:3800" placeholder="SELECT ID FR..imenik..." />
-            <marker date="1463309522441" expanded="true" signature="5819:5877" placeholder="SELECT zaodr..users..." />
-            <marker date="1463309522441" expanded="true" signature="5993:6197" placeholder="SELECT `imen..imenik..." />
-            <marker date="1463309522441" expanded="true" signature="6513:6547" placeholder="..." />
-            <marker date="1463309522441" expanded="true" signature="10704:10763" placeholder="SELECT ID, i..odredi..." />
-            <marker date="1463309522441" expanded="true" signature="10810:10849" placeholder="SELECT ID, i..odredi..." />
-            <marker date="1463309522441" expanded="true" signature="15874:15899" placeholder="SELECT naziv..vestine..." />
+            <marker date="1463747326502" expanded="true" signature="556:608" placeholder="SELECT * FRO..users..." />
+            <marker date="1463747326502" expanded="true" signature="1147:1258" placeholder="..." />
+            <marker date="1463747326502" expanded="true" signature="1381:1492" placeholder="..." />
+            <marker date="1463747326502" expanded="true" signature="1562:1673" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kupovina.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321234">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <marker date="1463746398487" expanded="true" signature="792:951" placeholder="INSERT INTO narudzbine..." />
+            <marker date="1463746398487" expanded="true" signature="2859:2923" placeholder="SELECT * FRO..predmeti..." />
+            <marker date="1463746398487" expanded="true" signature="3541:3567" placeholder="..." />
+            <marker date="1463746398487" expanded="true" signature="3657:3679" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kampu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21206896">
-          <caret line="354" column="29" selection-start-line="354" selection-start-column="29" selection-end-line="354" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.3321234">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="15" />
           <folding>
-            <marker date="1463148249497" expanded="true" signature="1474:1513" placeholder="DELETE FROM ..." />
-            <marker date="1463148249497" expanded="true" signature="1590:1885" placeholder="INSERT INTO kampovi..." />
-            <marker date="1463148249497" expanded="true" signature="1944:1991" placeholder="SELECT menja..kampovi..." />
-            <marker date="1463148249497" expanded="true" signature="2110:2442" placeholder="UPDATE kampo..." />
-            <marker date="1463148249497" expanded="true" signature="2496:2543" placeholder="SELECT ID FR..kampovi..." />
-            <marker date="1463148249497" expanded="true" signature="4569:4613" placeholder="SELECT ID,na..kampovi..." />
+            <marker date="1463746455109" expanded="true" signature="1532:1571" placeholder="DELETE FROM ..." />
+            <marker date="1463746455109" expanded="true" signature="1648:1943" placeholder="INSERT INTO kampovi..." />
+            <marker date="1463746455109" expanded="true" signature="2002:2049" placeholder="SELECT menja..kampovi..." />
+            <marker date="1463746455109" expanded="true" signature="2168:2500" placeholder="UPDATE kampo..." />
+            <marker date="1463746455109" expanded="true" signature="2554:2601" placeholder="SELECT ID FR..kampovi..." />
+            <marker date="1463746455109" expanded="true" signature="4627:4671" placeholder="SELECT ID,na..kampovi..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/izviu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34827587">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <marker date="1463745961516" expanded="true" signature="1228:1266" placeholder="DELETE FROM ..." />
+            <marker date="1463745961516" expanded="true" signature="1343:2410" placeholder="INSERT INTO imenik..." />
+            <marker date="1463745961516" expanded="true" signature="2469:2515" placeholder="SELECT menja..imenik..." />
+            <marker date="1463745961516" expanded="true" signature="2665:3758" placeholder="UPDATE imeni..." />
+            <marker date="1463745961516" expanded="true" signature="3812:3858" placeholder="SELECT ID FR..imenik..." />
+            <marker date="1463745961516" expanded="true" signature="5877:5935" placeholder="SELECT zaodr..users..." />
+            <marker date="1463745961516" expanded="true" signature="6051:6255" placeholder="SELECT `imen..imenik..." />
+            <marker date="1463745961516" expanded="true" signature="6571:6605" placeholder="..." />
+            <marker date="1463745961516" expanded="true" signature="10762:10821" placeholder="SELECT ID, i..odredi..." />
+            <marker date="1463745961516" expanded="true" signature="10868:10907" placeholder="SELECT ID, i..odredi..." />
+            <marker date="1463745961516" expanded="true" signature="15932:15957" placeholder="SELECT naziv..vestine..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30852994">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321234">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <marker date="1463746543412" expanded="true" signature="559:641" placeholder="UPDATE users..." />
+            <marker date="1463746543412" expanded="true" signature="1440:1457" placeholder="..." />
+            <marker date="1463746543412" expanded="true" signature="1483:1498" placeholder="..." />
+            <marker date="1463746543412" expanded="true" signature="1544:1555" placeholder="..." />
+            <marker date="1463746543412" expanded="true" signature="1578:1597" placeholder="SELECT * FRO..users..." />
+            <marker date="1463746543412" expanded="true" signature="1961:2007" placeholder="SELECT ime F..odredi..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predmetiu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321234">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <marker date="1463746574336" expanded="true" signature="568:608" placeholder="DELETE FROM ..." />
+            <marker date="1463746574336" expanded="true" signature="706:845" placeholder="INSERT INTO predmeti..." />
+            <marker date="1463746574336" expanded="true" signature="904:952" placeholder="SELECT menja..predmeti..." />
+            <marker date="1463746574336" expanded="true" signature="1071:1236" placeholder="UPDATE predm..." />
+            <marker date="1463746574336" expanded="true" signature="1290:1338" placeholder="SELECT ID FR..predmeti..." />
+            <marker date="1463746574336" expanded="true" signature="2871:2936" placeholder="SELECT `ID`,..predmeti..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predmetil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321234">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <marker date="1463746670246" expanded="true" signature="521:568" placeholder="SELECT menja..predmeti..." />
+            <marker date="1463746670246" expanded="true" signature="675:789" placeholder="UPDATE predm..." />
+            <marker date="1463746670246" expanded="true" signature="2125:2164" placeholder="SELECT * FRO..predmeti..." />
+            <marker date="1463746670246" expanded="true" signature="2324:2409" placeholder="..." />
+            <marker date="1463746670246" expanded="true" signature="3668:3690" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odredu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321234">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <marker date="1463746694897" expanded="true" signature="829:867" placeholder="DELETE FROM ..." />
+            <marker date="1463746694897" expanded="true" signature="944:1131" placeholder="INSERT INTO odredi..." />
+            <marker date="1463746694897" expanded="true" signature="1190:1236" placeholder="SELECT menja..odredi..." />
+            <marker date="1463746694897" expanded="true" signature="1348:1561" placeholder="UPDATE odred..." />
+            <marker date="1463746694897" expanded="true" signature="1615:1661" placeholder="SELECT ID FR..odredi..." />
+            <marker date="1463746694897" expanded="true" signature="3188:3291" placeholder="SELECT `ID`,..odredi..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odredp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29764065">
+          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+          <folding>
+            <marker date="1463305187703" expanded="true" signature="967:1003" placeholder="SELECT * FRO..odredi..." />
+            <marker date="1463305187703" expanded="true" signature="1473:1502" placeholder="..." />
+            <marker date="1463305187703" expanded="true" signature="1517:1546" placeholder="..." />
+            <marker date="1463305187703" expanded="true" signature="1903:1943" placeholder="..." />
+            <marker date="1463305187703" expanded="true" signature="1989:2000" placeholder="..." />
+            <marker date="1463305187703" expanded="true" signature="2370:2391" placeholder="..." />
+            <marker date="1463305187703" expanded="true" signature="2444:2466" placeholder="..." />
+            <marker date="1463305187703" expanded="true" signature="2488:2569" placeholder="SELECT ime, ..imenik..." />
+            <marker date="1463305187703" expanded="true" signature="2758:2797" placeholder="..." />
+            <marker date="1463305187703" expanded="true" signature="2904:2943" placeholder="..." />
+            <marker date="1463305187703" expanded="true" signature="3053:3092" placeholder="..." />
+            <marker date="1463305187703" expanded="true" signature="3204:3243" placeholder="..." />
+            <marker date="1463305187703" expanded="true" signature="3354:3393" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obukeu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321234">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <marker date="1463746746656" expanded="true" signature="967:1004" placeholder="DELETE FROM ..." />
+            <marker date="1463746746656" expanded="true" signature="1081:1328" placeholder="INSERT INTO obuke..." />
+            <marker date="1463746746656" expanded="true" signature="1387:1432" placeholder="SELECT menja..obuke..." />
+            <marker date="1463746746656" expanded="true" signature="1551:1833" placeholder="UPDATE obuke..." />
+            <marker date="1463746746656" expanded="true" signature="1887:1932" placeholder="SELECT ID FR..obuke..." />
+            <marker date="1463746746656" expanded="true" signature="3947:3996" placeholder="SELECT ID,me..obuke..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/obukep.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4754991">
+          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
+          <folding>
+            <marker date="1463305723309" expanded="true" signature="1039:1074" placeholder="SELECT * FRO..obuke..." />
+            <marker date="1463305723309" expanded="true" signature="1376:1457" placeholder="..." />
+            <marker date="1463305723309" expanded="true" signature="1484:1513" placeholder="..." />
+            <marker date="1463305723309" expanded="true" signature="1528:1557" placeholder="..." />
+            <marker date="1463305723309" expanded="true" signature="1928:1968" placeholder="..." />
+            <marker date="1463305723309" expanded="true" signature="2014:2025" placeholder="..." />
+            <marker date="1463305723309" expanded="true" signature="2260:2286" placeholder="..." />
+            <marker date="1463305723309" expanded="true" signature="2447:2458" placeholder="..." />
+            <marker date="1463305723309" expanded="true" signature="2472:2527" placeholder="..." />
+            <marker date="1463305723309" expanded="true" signature="2771:2944" placeholder="SELECT imeni..imenik..." />
+            <marker date="1463305723309" expanded="true" signature="3299:3463" placeholder="SELECT imeni..imenik..." />
+            <marker date="1463305723309" expanded="true" signature="4032:4087" placeholder="..." />
+            <marker date="1463305723309" expanded="true" signature="4148:4219" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/isvi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12296564">
+          <caret line="4" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <marker date="1463746813837" expanded="true" signature="162:353" placeholder="SELECT imeni..imenik..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ipredmeti.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11724138">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <marker date="1463746818340" expanded="true" signature="147:181" placeholder="SELECT * FRO..predmeti..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/iodredi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11724138">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <marker date="1463746825173" expanded="true" signature="147:179" placeholder="SELECT * FRO..odredi..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/iobuke.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11724138">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <marker date="1463746832580" expanded="true" signature="147:178" placeholder="SELECT * FRO..obuke..." />
+            <marker date="1463746832580" expanded="true" signature="677:868" placeholder="SELECT imeni..imenik..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/ikampovi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11724138">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <marker date="1463746843575" expanded="true" signature="147:180" placeholder="SELECT * FRO..kampovi..." />
+            <marker date="1463746843575" expanded="true" signature="679:870" placeholder="SELECT imeni..imenik..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/iimenik.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11724138">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <marker date="1463746848830" expanded="true" signature="147:179" placeholder="SELECT * FRO..imenik..." />
           </folding>
         </state>
       </provider>
